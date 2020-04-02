@@ -1,0 +1,13 @@
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\bin\Debug\netcoreapp3.1\D2RaidTeamRandomizer.exe
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\bin\Debug\netcoreapp3.1\D2RaidTeamRandomizer.deps.json
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\bin\Debug\netcoreapp3.1\D2RaidTeamRandomizer.runtimeconfig.json
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\bin\Debug\netcoreapp3.1\D2RaidTeamRandomizer.runtimeconfig.dev.json
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\bin\Debug\netcoreapp3.1\D2RaidTeamRandomizer.dll
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\bin\Debug\netcoreapp3.1\D2RaidTeamRandomizer.pdb
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\obj\Debug\netcoreapp3.1\D2RaidTeamRandomizer.csprojAssemblyReference.cache
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\obj\Debug\netcoreapp3.1\D2RaidTeamRandomizer.csproj.CoreCompileInputs.cache
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\obj\Debug\netcoreapp3.1\D2RaidTeamRandomizer.AssemblyInfoInputs.cache
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\obj\Debug\netcoreapp3.1\D2RaidTeamRandomizer.AssemblyInfo.cs
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\obj\Debug\netcoreapp3.1\D2RaidTeamRandomizer.dll
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\obj\Debug\netcoreapp3.1\D2RaidTeamRandomizer.pdb
+C:\Users\Frost\source\repos\D2RaidTeamRandomizer\D2RaidTeamRandomizer\obj\Debug\netcoreapp3.1\D2RaidTeamRandomizer.genruntimeconfig.cache
