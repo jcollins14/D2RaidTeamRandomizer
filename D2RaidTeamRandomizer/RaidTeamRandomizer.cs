@@ -16,7 +16,7 @@ namespace D2RaidTeamRandomizer
         public void AddPlayer()
         {
             Console.Clear();
-            Console.WriteLine("Please input the name of the player to add.");
+            Console.WriteLine("Please input the name of the player to add. NOTE: Case Sensitive");
             string player = Console.ReadLine().Trim();
             if (!Players.Contains(player))
             {
@@ -65,7 +65,7 @@ namespace D2RaidTeamRandomizer
         public void ConfirmPlayers()
         {
             Console.Clear();
-            Console.WriteLine("Please Select Players Based On Menu #");
+            Console.WriteLine("Please Enter Player Numbers, Separated by only a space.");
             Console.WriteLine("=====================================");
             Console.WriteLine();
             for (int i = 0; i < Players.Count; i++)
@@ -80,6 +80,14 @@ namespace D2RaidTeamRandomizer
             }
             ConfirmedPlayers.Sort();
             Console.Clear();
+            if (ConfirmedPlayers.Count % 6 != 0)
+            {
+                Console.WriteLine("Please only confirm players in multiples of 6.");
+                ConfirmedPlayers = new List<string>();
+                Console.WriteLine("Players not confirmed. Please try again from the menu.");
+            }
+            else
+            {
             Console.WriteLine("Are these players correct? (y/n)");
             Console.WriteLine("==========================");
             foreach (string name in ConfirmedPlayers)
@@ -102,6 +110,7 @@ namespace D2RaidTeamRandomizer
                 ConfirmedPlayers = new List<string>();
                 Console.WriteLine("Players not confirmed. Please try again from the menu.");
             }
+            }
             Console.WriteLine();
             Console.WriteLine("Press any key to return to the menu.");
             Console.ReadKey();
@@ -112,13 +121,6 @@ namespace D2RaidTeamRandomizer
             Random rng = new Random();
             int startingNumber = eligiblePlayers.Count;
             string[,] result = new string[startingNumber/6,6];
-            if (eligiblePlayers.Count % 6 != 0)
-            {
-                Console.WriteLine("Error: Incorrect Number of Players Entered. Please confirm players again.");
-                ConfirmedPlayers = new List<string>();
-            }
-            else
-            {
                 for (int i = 0; i < startingNumber; i++)
                 {
                     int select = rng.Next(0, eligiblePlayers.Count);
@@ -137,7 +139,6 @@ namespace D2RaidTeamRandomizer
                     }
                     Console.WriteLine();
                 }
-            }
             Console.WriteLine();
             Console.WriteLine("Press any key to return to the menu.");
             Console.ReadKey();
@@ -153,23 +154,21 @@ namespace D2RaidTeamRandomizer
         public void DisplayMenu()
         {
             Console.Clear();
-            Console.WriteLine("Please Select an Option.");
+            Console.WriteLine("Destiny 2 Raid Team Randomizer");
             Console.WriteLine("========================");
-            Console.WriteLine("1: Load Players");
-            Console.WriteLine("2: Add Player");
+            Console.WriteLine("1: Load Players from File");
+            Console.WriteLine("2: Add Player to File");
             Console.WriteLine("3: View Players");
             Console.WriteLine("4: Confirm Players");
             Console.WriteLine("5: Shuffle Teams");
             Console.WriteLine("6: Exit");
             Console.WriteLine("========================");
             Console.WriteLine();
-
             int selection = 0;
-            while (selection <1 || selection > 6)
+            while (selection < 1 || selection > 6)
             {
                 int.TryParse(Console.ReadLine().Trim(), out selection);
             }
-
             switch (selection)
             {
                 case 1: 
@@ -192,7 +191,6 @@ namespace D2RaidTeamRandomizer
                     break;
             }
         }
-
         public void ViewPlayers()
         {
             Console.Clear();
